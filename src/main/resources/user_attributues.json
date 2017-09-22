@@ -1,0 +1,20 @@
+[
+  {
+    "name": "rkrier@cleo.com",
+    "attributes": {
+      "aud": "5t3hiii9dvilam4rnirh6cvv57",
+      "auth_time": "1501868316",
+      "cognito:username": "rkrier@cleo.com",
+      "custom:company": "Cleo",
+      "custom:title": "Grunt",
+      "email": "rkrier@cleo.com",
+      "exp": "1501871916",
+      "family_name": "Krier",
+      "given_name": "Bob",
+      "iat": "1501868316",
+      "iss": "https://cognito-idp.us-west-2.amazonaws.com/us-west-2_xvKNTz8xN",
+      "sub": "a0d3f5ef-bba8-47b1-a374-ce68a3a13ad2",
+      "token_use": "id"
+    }
+  }
+]

@@ -1,0 +1,43 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+    <!--<persistence-unit name="redshift-kpi">-->
+        <!--<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>-->
+        <!--<properties>-->
+            <!--<property name="javax.persistence.jdbc.url" value="jdbc:redshift://crowsnest-event-cluster.ckxibc9k7wwt.us-west-2.redshift.amazonaws.com:5439/crowsnesteventdb" />-->
+            <!--<property name="javax.persistence.jdbc.user" value="rkrier" />-->
+            <!--<property name="javax.persistence.jdbc.password" value="nr58T6Qb" />-->
+            <!--<property name="javax.persistence.jdbc.driver" value="com.amazon.redshift.jdbc42.Driver" />-->
+            <!--&lt;!&ndash;<property name="hibernate.show_sql" value="true" />&ndash;&gt;-->
+            <!--&lt;!&ndash;<property name="hibernate.format_sql" value="true" />&ndash;&gt;-->
+            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.PostgresPlusDialect" />-->
+            <!--<property name="hibernate.hbm2ddl.auto" value="update" />-->
+        <!--</properties>-->
+    <!--</persistence-unit>-->
+
+    <persistence-unit name="redshift-kpi">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres" />
+            <property name="javax.persistence.jdbc.user" value="postgres" />
+            <property name="javax.persistence.jdbc.password" value="bk597288" />
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <!--<property name="hibernate.show_sql" value="true" />-->
+            <!--<property name="hibernate.format_sql" value="true" />-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+
+
+            <property name="hibernate.connection.provider_class"
+                      value="org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider" />
+            <property name="hibernate.c3p0.max_size" value="100" />
+            <property name="hibernate.c3p0.min_size" value="5" />
+            <property name="hibernate.c3p0.acquire_increment" value="5" />
+            <property name="hibernate.c3p0.idle_test_period" value="500" />
+            <property name="hibernate.c3p0.max_statements" value="50" />
+            <property name="hibernate.c3p0.timeout" value="10000" />
+
+        </properties>
+    </persistence-unit>
+</persistence>
